@@ -19,6 +19,7 @@ let hideWindow = () => {
 
 for (let i = 0; i < clickMe.length; i++) {
   clickMe[i].addEventListener("click", modelWindow);
-  closeModel.addEventListener("click", hideWindow);
-  overlay.addEventListener("click", hideWindow);
 }
+closeModel.addEventListener("click", hideWindow);
+overlay.addEventListener("click", hideWindow);
+document.addEventListener('keydown',hideWindow);
